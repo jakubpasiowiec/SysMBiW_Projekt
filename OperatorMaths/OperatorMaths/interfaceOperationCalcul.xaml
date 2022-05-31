@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OperatorMaths.interfaceOperationCalcul">
+
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout BackgroundColor="WhiteSmoke">
+                <Frame>
+                    <StackLayout>
+                        <Label  x:Name="frameMode" Text="" TextTransform="Uppercase" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Gray" FontAttributes="Bold" />
+                        <BoxView BackgroundColor="Gray" HeightRequest="2" />
+                    </StackLayout>
+                </Frame>
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+                    <StackLayout x:Name="stackLayoutFunction" Orientation="Horizontal" HorizontalOptions="Center">
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="↓↑" HorizontalOptions="Center" Margin="30" FontSize="50" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout x:Name="stackResult" >
+                        <Label  x:Name="lblResult" Text="Wynik" HorizontalOptions="CenterAndExpand" FontSize="25"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="70" Margin="20">
+                    <Button Text="Zeruj" Clicked="btnClear"  FontSize="Large" WidthRequest="150" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" BackgroundColor="OrangeRed" TextColor="White" BorderWidth="3" BorderColor="red" CornerRadius="5" />
+                    <BoxView BackgroundColor="Black" WidthRequest="2"/>
+                    <Button Text="Oblicz" Clicked="btnResult"  FontSize="Large"  WidthRequest="150" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="Green" BackgroundColor="LightGreen" BorderWidth="3" BorderColor="LightGreen" CornerRadius="5" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
